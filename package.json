@@ -1,0 +1,38 @@
+{
+  "name": "barber-website",
+  "version": "1.0.0",
+  "description": "Barber website one-pager",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /barber-website/",
+    "scss-w": "node-sass-chokidar sass/main.scss -o css -r -w --source-map true --output-style expanded",
+    "scss-prod": "node-sass-chokidar sass/main.scss -o css --ext min.css --output-style compressed | npm run prefix",
+    "prefix": "postcss css/main.min.css --use=autoprefixer --autoprefixer.browsers 'last 4 versions' --annotation=false --output=css/dist/main.min.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GosiaAntoniak/barber-website.git"
+  },
+  "keywords": [
+    "Barber",
+    "website",
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "Gosia Antoniak, Olga Pikulska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GosiaAntoniak/barber-website/issues"
+  },
+  "homepage": "https://github.com/GosiaAntoniak/barber-website#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.54.8"
+  }
+}
