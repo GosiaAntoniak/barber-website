@@ -1,25 +1,18 @@
-.container {
-  padding: 0 32px;
-}
-
 .title__line {
   display: inline-block;
   width: 60px;
   height: 1px;
-  fill: #303030;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  stroke: #303030;
+  fill: $lightBlack;
+  transform: rotate(180deg);
+  stroke: $lightBlack;
   padding-left: 20px;
 }
-
 .sql__box {
   height: 133px;
   width: 194px;
   border-radius: 0px;
   background-color: #f7f7f7;
 }
-
 .sql__title {
   display: inline-block;
   font-family: Open Sans;
@@ -48,6 +41,6 @@
   line-height: 1.357;
   letter-spacing: 0em;
   text-align: center;
-  color: #FF6C00;
+  color: $orange;
   padding: 27px 41px 34px 2px;
-}/*# sourceMappingURL=main.css.map */
+}
