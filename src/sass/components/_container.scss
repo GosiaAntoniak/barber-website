@@ -1,4 +1,15 @@
 .container {
-  //   max-width: 416px;
-  padding: 0 32px;
+  max-width: 416px;
+  margin: 0 32px;
+}
+
+.section {
+  margin-bottom: 84px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
 }
