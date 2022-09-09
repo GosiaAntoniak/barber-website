@@ -1,61 +1,24 @@
-.container {
-  max-width: 480px;
-  padding: 0 32px;
-}
-
-.section {
-  margin-bottom: 84px;
-}
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 825px) and (max-width: 1279px) {
-  .container {
-    max-width: 770px;
-    padding: 0 40px;
-  }
-  .section {
-    margin-bottom: 100px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 55px;
-  }
-  .section {
-    margin-bottom: 130px;
-  }
-}
 .sql__subtitle {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #303030;
+  color: $lightBlack;
   min-width: 290px;
 }
-
 .title__line {
   display: inline-block;
   width: 80px;
   height: 9px;
-  fill: #303030;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  stroke: #303030;
+  fill: $lightBlack;
+  transform: rotate(180deg);
+  stroke: $lightBlack;
   padding-left: 20px;
   padding-top: 4px;
 }
-
 .sql__title {
   display: inline-block;
   font-family: Raleway;
@@ -65,18 +28,17 @@
   letter-spacing: 0.05em;
   text-align: left;
   margin-top: 20px;
-  color: #303030;
+  color: $lightBlack;
   min-width: 418px;
 }
-
 .sql__text {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
-  color: #555555;
+  color: $paragraph;
   text-align: left;
   margin-bottom: 44px;
   margin-top: 20px;
@@ -89,24 +51,15 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
-
 .grid__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   height: 133px;
   width: 194px;
   border-radius: 0px;
   background-color: #f7f7f7;
 }
-
 .grid__title {
   font-family: Open Sans;
   text-align: center;
@@ -117,9 +70,8 @@
   letter-spacing: 0.05em;
   margin-top: 21px;
   margin-bottom: 6px;
-  color: #303030;
+  color: $lightBlack;
 }
-
 .grid__title_span {
   font-family: Open Sans;
   font-size: 16px;
@@ -127,19 +79,18 @@
   line-height: 1.357;
   letter-spacing: 0em;
   text-align: center;
-  color: #ff6c00;
+  color: $orange;
   vertical-align: super;
 }
-
 .grid__text {
   width: 122px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   text-align: center;
-  color: #303030;
+  color: $lightBlack;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -147,12 +98,13 @@
 .grid__card:nth-child(2) {
   margin-top: 34px;
 }
-
 .grid__card:nth-child(3) {
   margin-top: -34px;
 }
 
-@media (min-width: 825px) and (max-width: 1279px) {
+@include breakpoint-mobile {
+}
+@include breakpoint-tablet-por {
   .sql__subtitle {
     min-width: 284px;
   }
@@ -171,15 +123,10 @@
     width: 210px;
   }
 }
-@media (min-width: 1280px) {
+@include breakpoint-desktop {
   .traditional-sql {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .grid {
     padding-left: 100px;
@@ -188,6 +135,10 @@
   .grid__card {
     width: 170px;
   }
+  // .grid__card:nth-child(1) {
+  //   margin-top: -9px;
+  // }
+
   .sql__subtitle {
     min-width: 205px;
   }
@@ -198,4 +149,4 @@
   .sql__text {
     width: 445px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

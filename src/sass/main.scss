@@ -1,1 +1,5 @@
-@import "components/nav";
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'components/nav';
+@import 'components/container';
+@import 'components/traditional-school';
