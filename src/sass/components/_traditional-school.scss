@@ -7,6 +7,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $lightBlack;
+  min-width: 290px;
 }
 .title__line {
   display: inline-block;
@@ -26,9 +27,9 @@
   line-height: 1.357;
   letter-spacing: 0.05em;
   text-align: left;
-  margin-bottom: 6px;
   margin-top: 20px;
   color: $lightBlack;
+  min-width: 418px;
 }
 .sql__text {
   font-family: 'Open Sans';
@@ -41,6 +42,7 @@
   text-align: left;
   margin-bottom: 44px;
   margin-top: 20px;
+  min-width: 418px;
 }
 
 .grid {
@@ -103,10 +105,48 @@
 @include breakpoint-mobile {
 }
 @include breakpoint-tablet-por {
+  .sql__subtitle {
+    min-width: 284px;
+  }
   .sql__title {
-    margin-bottom: 20px;
     margin-right: 268px;
+    min-width: 420px;
+  }
+  .sql__text {
+    min-width: 500px;
+    padding-right: 188px;
+  }
+  .grid {
+    margin-left: 239px;
+  }
+  .grid__card {
+    width: 210px;
   }
 }
 @include breakpoint-desktop {
-} ;
+  .traditional-sql {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .grid {
+    padding-left: 100px;
+    padding-right: 130px;
+  }
+  .grid__card {
+    width: 170px;
+  }
+  // .grid__card:nth-child(1) {
+  //   margin-top: -9px;
+  // }
+
+  .sql__subtitle {
+    min-width: 205px;
+  }
+  .sql__title {
+    margin-right: 125px;
+    min-width: 445px;
+  }
+  .sql__text {
+    width: 445px;
+  }
+}

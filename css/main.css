@@ -1,6 +1,6 @@
 .container {
-  max-width: 416px;
-  margin: 0 32px;
+  max-width: 480px;
+  padding: 0 32px;
 }
 
 .section {
@@ -16,14 +16,20 @@
 
 @media (min-width: 825px) and (max-width: 1279px) {
   .container {
-    max-width: 690px;
-    margin: 0 40px;
+    max-width: 770px;
+    padding: 0 40px;
+  }
+  .section {
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: 1170px;
-    margin: 0 55px;
+    max-width: 1280px;
+    padding: 0 55px;
+  }
+  .section {
+    margin-bottom: 130px;
   }
 }
 .sql__subtitle {
@@ -35,6 +41,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+  min-width: 290px;
 }
 
 .title__line {
@@ -57,9 +64,9 @@
   line-height: 1.357;
   letter-spacing: 0.05em;
   text-align: left;
-  margin-bottom: 6px;
   margin-top: 20px;
   color: #303030;
+  min-width: 418px;
 }
 
 .sql__text {
@@ -73,6 +80,7 @@
   text-align: left;
   margin-bottom: 44px;
   margin-top: 20px;
+  min-width: 418px;
 }
 
 .grid {
@@ -145,8 +153,49 @@
 }
 
 @media (min-width: 825px) and (max-width: 1279px) {
+  .sql__subtitle {
+    min-width: 284px;
+  }
   .sql__title {
-    margin-bottom: 20px;
     margin-right: 268px;
+    min-width: 420px;
+  }
+  .sql__text {
+    min-width: 500px;
+    padding-right: 188px;
+  }
+  .grid {
+    margin-left: 239px;
+  }
+  .grid__card {
+    width: 210px;
+  }
+}
+@media (min-width: 1280px) {
+  .traditional-sql {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .grid {
+    padding-left: 100px;
+    padding-right: 130px;
+  }
+  .grid__card {
+    width: 170px;
+  }
+  .sql__subtitle {
+    min-width: 205px;
+  }
+  .sql__title {
+    margin-right: 125px;
+    min-width: 445px;
+  }
+  .sql__text {
+    width: 445px;
   }
 }/*# sourceMappingURL=main.css.map */
