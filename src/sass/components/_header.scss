@@ -1,5 +1,5 @@
 .header__background {
-  background: url("../images/menu/background.jpg") no-repeat 50% 100% / cover;
+  background: url("./images/menu/background.jpg") no-repeat 50% 100% / cover;
   margin-right: 40px;
   height: 680px;
   flex-grow: 1;
@@ -110,7 +110,7 @@
 
 .menu-list__item {
   font-family: "Open Sans", sans-serif;
-  font-width: 600;
+  font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   cursor: pointer;
