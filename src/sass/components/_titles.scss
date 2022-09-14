@@ -6,7 +6,7 @@
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: $dark-paragraf;
+  color: $font-primary;
   min-width: 290px;
 }
 
@@ -14,9 +14,9 @@
   display: inline-block;
   width: 80px;
   height: 9px;
-  fill: $dark-paragraf;
+  fill: $font-primary;
   transform: rotate(180deg);
-  stroke: $dark-paragraf;
+  stroke: $font-primary;
   padding-left: 20px;
   padding-top: 4px;
 }
@@ -30,6 +30,6 @@
   letter-spacing: 0.05em;
   text-align: left;
   margin-top: 20px;
-  color: $dark-paragraf;
+  color: $font-primary;
   min-width: 418px;
 }
