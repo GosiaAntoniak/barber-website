@@ -1,3 +1,107 @@
+.subtitle--real-man {
+  padding-top: 84px;
+}
+
 .title--real-man {
   margin-bottom: 44px;
+}
+.real-man {
+  width: 418px;
+  height: 502px;
+  margin-bottom: 64px;
+}
+.real-man--last {
+  height: 586px;
+}
+.no-gap {
+  display: block;
+}
+.real-man__signature {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &--title {
+    font-size: 18px;
+    line-height: 1.3889;
+    color: $font-primary;
+    margin-top: 30px;
+  }
+
+  &--subtitle {
+    font-size: 14px;
+    line-height: 1.357;
+    color: $text-hover;
+  }
+}
+
+.socials {
+  fill: $font-primary;
+  height: 20px;
+  width: 20px;
+  &:hover,
+  &:focus {
+    fill: $text-hover;
+  }
+}
+
+.socials__background {
+  background-color: $font-secondary;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+@include breakpoint-tablet-por {
+  .subtitle--real-man {
+    padding-top: 100px;
+  }
+  .real-man {
+    width: 450px;
+  }
+  .real-man--last {
+    height: 602px;
+  }
+  .real-man__signature--title {
+    margin-bottom: 8px;
+  }
+}
+
+@include breakpoint-desktop {
+  .subtitle--real-man {
+    padding-top: 130px;
+  }
+  .real-man {
+    width: 370px;
+    margin-bottom: 0px;
+    &__desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-bottom: 130px;
+    }
+  }
+  .real-man--last {
+    height: 632px;
+  }
+  .real-man__signature--title {
+    margin-bottom: 8px;
+  }
 }
